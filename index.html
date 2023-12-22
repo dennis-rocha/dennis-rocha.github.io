@@ -1,15 +1,165 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Blog</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <title>Home</title>
 </head>
+
+<style>
+    /* section {
+        display: none;
+    } */
+</style>
+
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" onclick="trocarSecao('home')">Dennis Rocha</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" onclick="trocarSecao('contato')" aria-current="page" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="trocarSecao('sobre-mim')">Sobre mim</a>
+                        </li>
+                    </ul>
+                    <!-- Mover para a margem esquerda -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Voltar ao topo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mt-4 p-5 bg-primary text-white rounded text-center">
+        <!-- Adicionando margem superior e inferior -->
+        <img src="static/img/dennis.jpg" alt="Imagem do Perfil" class="rounded-circle mb-3"
+            width="150">
+
+        <!-- Título e descrição -->
+        <h1>Dennis Rocha</h1>
+        <p>Developer Back-end</p>
+    </div>
+
+    <section id="home">
+        <div class="container mt-4 mb-4 p-5">
+            <!-- Conteúdo da página de contato -->
+          <h1>Home</h1>
+          
+          <hr class="featurette-divider">
+        
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+              <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+            </div>
+          </div>
+        
+          <hr class="featurette-divider">
+        
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+              <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+            </div>
+          </div>
+        
+          <hr class="featurette-divider">
+        
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+            </div>
+          </div>
+        
+          <hr class="featurette-divider">
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container mt-4 mb-4 p-5">
+            <!-- Conteúdo da página de contato -->
+            <h1>Contato</h1>
+            
+            <p>
+                Bem-vindo à nossa página de contato. Estamos ansiosos para ouvir de você. 
+                Por favor, sinta-se à vontade para entrar em contato conosco usando o formulário abaixo ou pelos nossos canais de comunicação.
+            </p>
+        </div>
+    </section>
+
+    <section id="sobre-mim">
+        <div class="container mt-4 mb-4 p-5">
+            <div class="container">
+                <h1 class="display-4">Bem-Vindo ao Meu Perfil!</h1>
+                
+                <p class="lead">Me chamo Dennis Rocha, e sou apaixonado por explorar o vasto mundo da tecnologia da informação. Com uma trajetória repleta de aprendizado e experiências enriquecedoras, estou aqui para compartilhar um pouco da minha jornada:</p>
+        
+                <p>Graduei-me em Ciência da Computação pela renomada <strong>Universidade TechMaster</strong> e aprimorei meus conhecimentos com uma pós-graduação em Segurança da Informação na <strong>International Tech Institute</strong>. Ao longo dos anos, acumulei inúmeros cursos e certificações em áreas como Desenvolvimento de Software, Redes de Computadores e Inteligência Artificial.</p>
+        
+                <p>Tive a incrível oportunidade de trabalhar em algumas das maiores empresas de tecnologia do mundo, incluindo passagens pela <strong>Google</strong>, onde contribuí para projetos inovadores que impactam milhões de usuários diariamente, e pela <strong>Apple</strong>, onde mergulhei no universo do design e usabilidade.</p>
+        
+                <p>Minha busca constante por conhecimento me levou a realizar cursos e pós-graduações em diversas faculdades no Brasil e no exterior, como a <strong>Universidade TechMaster</strong> (BR), <strong>MIT</strong> (EUA) e <strong>Oxford</strong> (UK). Essa experiência internacional não apenas ampliou meus horizontes acadêmicos, mas também proporcionou uma visão global sobre as últimas tendências em tecnologia.</p>
+        
+                <p>Atualmente, minha expertise está concentrada em soluções de TI, abrangendo desde o desenvolvimento de software até a gestão de infraestrutura e segurança cibernética. Estou sempre em busca de desafios empolgantes e oportunidades para aplicar meu conhecimento em prol do avanço tecnológico e da inovação.</p>
+            </div>
+        </div>
+    </section>
     
 </body>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 m-4">
+    <div class="col-md-4 d-flex align-items-center container">
+      <span class="mb-3 mb-md-0 text-body-secondary">Copyright © Dennis Rocha 2023</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex container">
+      <li class="m-1"><a class="text-body-secondary" href="#"><i class="bi-github" style="font-size: 2rem; color: #007BFF;"></i></a></li>
+      <li class="m-1"><a class="text-body-secondary" href="#"><i class="bi-linkedin" style="font-size: 2rem; color: #007BFF;"></i></a></li>
+    </ul>
+    
+    
+
+  </footer>
+<script>
+    function trocarSecao(secaoAtual) {
+      document.getElementById("home").style.display = "none";     
+      document.getElementById("contato").style.display = "none";     
+      document.getElementById("sobre-mim").style.display = "none";
+      
+      var new_title = secaoAtual.charAt(0).toUpperCase() + secaoAtual.slice(1);
+      
+      
+      document.title = new_title.replace("-"," "); 
+
+      document.getElementById(secaoAtual).style.display = "block";
+    }
+
+    trocarSecao('home')
+</script>
 </html>
