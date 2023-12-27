@@ -13,9 +13,6 @@
 </head>
 
 <style>
-    /* section {
-        display: none;
-    } */
 </style>
 
 <body>
@@ -38,7 +35,6 @@
                             <a class="nav-link" href="#" onclick="trocarSecao('sobre-mim')">Sobre mim</a>
                         </li>
                     </ul>
-                    <!-- Mover para a margem esquerda -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Voltar ao topo</a>
@@ -189,21 +185,27 @@
     </section>
 
 </body>
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 m-4">
-    <div class="col-md-4 d-flex align-items-center container">
-        <span class="mb-3 mb-md-0 text-body-secondary">Copyright © Dennis Rocha 2023</span>
+
+<footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© Desenvolvido por Dennis Rocha</span>
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex container">
-        <li class="m-1"><a class="text-body-secondary" href="#"><i class="bi-github"
-                    style="font-size: 2rem; color: #007BFF;"></i></a></li>
-        <li class="m-1"><a class="text-body-secondary" href="#"><i class="bi-linkedin"
-                    style="font-size: 2rem; color: #007BFF;"></i></a></li>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="m-1"><a class="text-body-primary" href="https://github.com/dennis-rocha"><i class="bi-github"
+                    style="font-size: 2rem;"></i></a></li>
+        <li class="m-1"><a class="text-body-primary" href="https://www.linkedin.com/in/dennis-rocha/"><i class="bi-linkedin"
+                    style="font-size: 2rem;"></i></a></li>
+        <li class="m-1"><a class="text-body-primary" href="https://lattes.cnpq.br/9897466003233875"><i class="bi-file-person-fill"
+                    style="font-size: 2rem;"></i></a></li>
     </ul>
-
-
-
 </footer>
+
 <script>
     function trocarSecao(secaoAtual) {
         document.getElementById("home").style.display = "none";
@@ -211,7 +213,6 @@
         document.getElementById("sobre-mim").style.display = "none";
 
         var new_title = secaoAtual.charAt(0).toUpperCase() + secaoAtual.slice(1);
-
 
         document.title = new_title.replace("-", " ");
 
