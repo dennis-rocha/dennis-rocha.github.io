@@ -11,11 +11,24 @@
 
     <title>Home</title>
 </head>
+<style>
+    .bg-blue {
+        background: #000080;
+    }
+
+    .text-blue {
+        color: #000080;
+    }
+
+    .bg-dark-blue {
+        background: #00001a;
+    }
+</style>
 
 <body>
     <!-- Menu -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-blue">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" onclick="trocarSecao('home')">Dennis Rocha</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -27,9 +40,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" onclick="trocarSecao('contato')" aria-current="page"
                                 href="#">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="trocarSecao('sobre-mim')">Sobre mim</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
@@ -43,85 +53,83 @@
     </header>
 
     <!-- Foto de perfil com descrição -->
-    <div class="mt-4 p-5 bg-primary text-white rounded text-center">
+    <div class="mt-4 p-5 bg-blue text-white rounded text-center">
         <img src="static/img/dennis.jpg" alt="Imagem do Perfil" class="rounded-circle mb-3" width="150">
         <h1>Dennis Rocha</h1>
-        <p>Developer Back-end</p>
+        <p> Developer Back-end</p>
     </div>
 
-    <!-- Seção da página principal -->
+
+    <!-- Seção da página sobre mim -->
     <section id="home">
         <div class="container mt-4 mb-4 p-5">
-            <!-- Conteúdo da página de contato -->
-            <h1>Home</h1>
+            <h1 class="display-4 fw-normal text-blue">Bem-Vindo ao Meu Perfil!</h1>
 
-            <hr class="featurette-divider">
+            <p class="lead">Desde jovem, sempre fui fascinado pela tecnologia e curioso para entender como as coisas
+                funcionam. Na minha adolescência, fiz um curso na área de TI, o que despertou minha paixão pelo
+                desenvolvimento de sistemas. Em 2019, após alguns eventos significativos na minha vida, decidi
+                mergulhar de cabeça no mundo da programação e, desde então, não parei de aprender e me especializar.
+            </p>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
-                            class="text-body-secondary">It’ll blow your mind.</span></h2>
-                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                        prose
-                        here.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
+            <h2 class="featurette-heading text-blue mt-4">Experiência Profissional</h2>
+            <p class="lead">Durante minha carreira profissional, contribui para o crescimento de mais de 30% nos
+                rendimentos da loja que supervisionava na adolescência. Na área de TI, ajudei a reverter um risco de
+                churn em uma empresa de aluguel de veículos, o que resultou em satisfação do cliente e novos
+                projetos. Algumas das minhas experiências abaixo:</p>
 
-            <hr class="featurette-divider">
+            <p><strong>Senai</strong> - <i>Especialista de Ensino II</i><br>
+                - Responsável por ministrar aulas presenciais do curso de Desenvolvimento de Sistemas, guiando os
+                alunos durante a imersão de aprendizagem e incentivando o engajamento com a metodologia de ensino e
+                as matérias aplicadas. Leciono disciplinas como Lógica de Programação, Modelagem e
+                Desenvolvimento de Banco de Dados, Fundamentos de Eletroeletrônica, Desenvolvimento de Aplicativos
+                com Java, Desenvolvimento de Sistemas com Python/Django, entre outras. Conduzo as aulas de
+                Codificação Backend, Lógica de Programação e Desenvolvimento de Sistemas, proporcionando uma
+                experiência educacional completa e prática.
+            </p>
 
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
-                            class="text-body-secondary">See
-                            for yourself.</span></h2>
-                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of
-                        how this
-                        layout would work with some actual real-world content in place.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
+            <p><strong>Neoway</strong> - <i>Desenvolvedor de Sistemas</i><br>
+                - Realizava atividades de Criação/Manutenção em serviços
+                personalizados de clientes. Os serviços eram criados com as
+                seguintes ferramentas: Python, GoLang, Shell Script,
+                PostgreSQL, Jenkins, ElasticSearch e PySpark. Eram criados
+                diversos tipos de relatórios/filtros conforme a demanda do
+                cliente, dependendo da necessidade do serviço, eram
+                criados automações para disponibilizar essas informações
+                na plataforma do cliente via APIs. Eram desenvolvidas
+                atividades como: Backtesting, Data Matching,
+                enriquecimento e indexação de dados, ETLs e era
+                responsável da equipe para alterar as configurações da
+                plataforma SaaS das “saídas” restritas que tinham dados
+                relacionados a B3. Além disso, atuei como Analista de Suporte N2-Tech
+                e realizava atividades de atualização de dados através de
+                Inputs das solicitações dos clientes. Atuava com SLAs e era
+                responsável por compartilhar os conhecimentos com novos
+                colaboradores.
+            </p>
 
-            <hr class="featurette-divider">
+            <p><strong>LifeTech</strong> - <i>Técnico de informática</i><br>
+                - Realizava atividades relacionadas a manutenção de
+                Notebooks, Computadores e Servidores. Realizava
+                passagem de cabos de rede nas instalações dos clientes e
+                também as configurações lógicas necessárias para a
+                operação dos clientes. Além disso, realizava instalação e
+                manutenção de sistemas de CFTV e Alarmes. Prestava
+                serviços de informática em geral, como: sanando duvidas de
+                clientes, remoção de vírus, manutenção em Computadores
+                e impressoras, entre outras atividades de suporte.
+            </p>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
-                            class="text-body-secondary">Checkmate.</span></h2>
-                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not
-                        really
-                        intended to be actually read, simply here to give you a better view of what this would look like
-                        with some
-                        actual content. Your content.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
+            <h2 class="featurette-heading text-blue mt-4">Formação e cursos</h2>
 
-            <hr class="featurette-divider">
+            <p><strong>UniSul - Pós-Graduação</strong> - <i>Nota: ..</i><br>
+                - Desenvolvimento de Sistemas e Metodologias Ágeis
+            </p>
+
+            <p><strong>Anhanguera - Graduação</strong> - <i>Nota: 9,7</i><br>
+                - Análise e Desenvolvimento de Sistemas
+            </p>
+
+
         </div>
     </section>
 
@@ -131,16 +139,18 @@
             <!-- Conteúdo da página de contato -->
             <h1>Contato</h1>
 
-            <p> Estou agradecido por visitar meu perfil e quero desde já convidá-lo a entrar em contato comigo por meio das minhas redes sociais. 
+            <p> Estou agradecido por visitar meu perfil e quero desde já convidá-lo a entrar em contato comigo por meio
+                das minhas redes sociais.
                 Fico à disposição para conversarmos e trocar experiências incríveis.
             </p>
 
-            <p> Além disso, quero convidá-lo a ver meu portfólio e meus projetos pessoais. 
+            <p> Além disso, quero convidá-lo a ver meu portfólio e meus projetos pessoais.
                 Qualquer dúvida, estou à disposição!
             </p>
 
             <div class="contact-info">
-                <a href="mailto:proftec.contato@gmail.com?subject=Entrando em contato...&body=Acessei seu protfolio e gostaria de conversar contigo." class="d-block">
+                <a href="mailto:proftec.contato@gmail.com?subject=Entrando em contato...&body=Acessei seu protfolio e gostaria de conversar contigo."
+                    class="d-block">
                     <i class="bi-envelope"></i>proftec.contato@gmail.com
                 </a>
                 <a href="https://www.linkedin.com/in/dennis-rocha/" class="d-block">
@@ -154,48 +164,6 @@
         </div>
     </section>
 
-    <!-- Seção da página sobre mim -->
-    <section id="sobre-mim">
-        <div class="container mt-4 mb-4 p-5">
-            <div class="container">
-                <h1 class="display-4">Bem-Vindo ao Meu Perfil!</h1>
-
-                <p class="lead">Me chamo Dennis Rocha, e sou apaixonado por explorar o vasto mundo da tecnologia da
-                    informação.
-                    Com uma trajetória repleta de aprendizado e experiências enriquecedoras, estou aqui para
-                    compartilhar um pouco
-                    da minha jornada:</p>
-
-                <p>Graduei-me em Ciência da Computação pela renomada <strong>Universidade TechMaster</strong> e
-                    aprimorei meus
-                    conhecimentos com uma pós-graduação em Segurança da Informação na <strong>International Tech
-                        Institute</strong>. Ao longo dos anos, acumulei inúmeros cursos e certificações em áreas como
-                    Desenvolvimento de Software, Redes de Computadores e Inteligência Artificial.</p>
-
-                <p>Tive a incrível oportunidade de trabalhar em algumas das maiores empresas de tecnologia do mundo,
-                    incluindo
-                    passagens pela <strong>Google</strong>, onde contribuí para projetos inovadores que impactam milhões
-                    de
-                    usuários diariamente, e pela <strong>Apple</strong>, onde mergulhei no universo do design e
-                    usabilidade.</p>
-
-                <p>Minha busca constante por conhecimento me levou a realizar cursos e pós-graduações em diversas
-                    faculdades no
-                    Brasil e no exterior, como a <strong>Universidade TechMaster</strong> (BR), <strong>MIT</strong>
-                    (EUA) e
-                    <strong>Oxford</strong> (UK). Essa experiência internacional não apenas ampliou meus horizontes
-                    acadêmicos,
-                    mas também proporcionou uma visão global sobre as últimas tendências em tecnologia.
-                </p>
-
-                <p>Atualmente, minha expertise está concentrada em soluções de TI, abrangendo desde o desenvolvimento de
-                    software até a gestão de infraestrutura e segurança cibernética. Estou sempre em busca de desafios
-                    empolgantes
-                    e oportunidades para aplicar meu conhecimento em prol do avanço tecnológico e da inovação.</p>
-            </div>
-        </div>
-    </section>
-
 </body>
 
 <!-- Seção do footer -->
@@ -205,12 +173,12 @@
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="m-1"><a class="text-body-primary" href="https://github.com/dennis-rocha"><i class="bi-github"
+        <li class="m-1"><a class="text-blue" target="_blank" href="https://github.com/dennis-rocha"><i class="bi-github"
                     style="font-size: 2rem;"></i></a></li>
-        <li class="m-1"><a class="text-body-primary" href="https://www.linkedin.com/in/dennis-rocha/"><i class="bi-linkedin"
-                    style="font-size: 2rem;"></i></a></li>
-        <li class="m-1"><a class="text-body-primary" href="https://lattes.cnpq.br/9897466003233875"><i class="bi-file-person-fill"
-                    style="font-size: 2rem;"></i></a></li>
+        <li class="m-1"><a class="text-blue" target="_blank" href="https://www.linkedin.com/in/dennis-rocha/"><i
+                    class="bi-linkedin" style="font-size: 2rem;"></i></a></li>
+        <li class="m-1"><a class="text-blue" target="_blank" href="https://lattes.cnpq.br/9897466003233875"><i
+                    class="bi-file-person-fill" style="font-size: 2rem;"></i></a></li>
     </ul>
 </footer>
 
@@ -218,7 +186,6 @@
     function trocarSecao(secaoAtual) {
         document.getElementById("home").style.display = "none";
         document.getElementById("contato").style.display = "none";
-        document.getElementById("sobre-mim").style.display = "none";
 
         var new_title = secaoAtual.charAt(0).toUpperCase() + secaoAtual.slice(1);
 
