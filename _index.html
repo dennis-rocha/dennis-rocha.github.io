@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <title>Home</title>
+</head>
+<style>
+    .bg-blue {
+        background: #000080;
+    }
+
+    .text-blue {
+        color: #000080;
+    }
+
+    .bg-dark-blue {
+        background: #00001a;
+    }
+</style>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <nav class="navbar-header">
+            <p class="navbar-brand">Dennis Rocha</p>
+            <div>
+                <ul>
+                    <li class="nav-item">
+                        <a href="#" onclick="trocarSecao('home')">Informações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="trocarSecao('contato')" aria-current="page"
+                            href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Voltar ao topo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Foto de perfil com descrição -->
+        <div class="intro">
+            <div>
+                <h1>Dennis Rocha</h1>
+                <p class="description">Desenvolvedor de Sistemas Back-end</p>
+                <p>Desde jovem, sempre fui fascinado pela tecnologia e curioso para entender como as coisas
+                    funcionam. Na minha adolescência, fiz um curso na área de TI, o que despertou minha paixão pelo
+                    desenvolvimento de sistemas. Em 2019, após alguns eventos significativos na minha vida, decidi
+                    mergulhar de cabeça no mundo da programação e, desde então, não parei de aprender e me especializar.
+                </p>
+            </div>
+            <img src="static/img/dennis.jpg" alt="Imagem do Perfil" class="rounded-circle mb-3" width="150">
+        </div>
+
+
+        <!-- Seção da página sobre mim -->
+        <section id="home">
+            <div class="container mt-4 mb-4 p-5">
+                <h1 class="display-4 fw-normal text-blue">Bem-Vindo ao Meu Perfil!</h1>
+
+
+                <h2 class="featurette-heading text-blue mt-4">Experiência Profissional</h2>
+                <p class="lead">Durante minha carreira profissional, contribui para o crescimento de mais de 30% nos
+                    rendimentos da loja que supervisionava na adolescência. Na área de TI, ajudei a reverter um risco de
+                    churn em uma empresa de aluguel de veículos, o que resultou em satisfação do cliente e novos
+                    projetos. Algumas das minhas experiências abaixo:</p>
+
+                <p><strong>Senai</strong> - <i>Especialista de Ensino II</i><br>
+                    - Responsável por ministrar aulas presenciais do curso de Desenvolvimento de Sistemas, guiando os
+                    alunos durante a imersão de aprendizagem e incentivando o engajamento com a metodologia de ensino e
+                    as matérias aplicadas. Leciono disciplinas como Lógica de Programação, Modelagem e
+                    Desenvolvimento de Banco de Dados, Fundamentos de Eletroeletrônica, Desenvolvimento de Aplicativos
+                    com Java, Desenvolvimento de Sistemas com Python/Django, entre outras. Conduzo as aulas de
+                    Codificação Backend, Lógica de Programação e Desenvolvimento de Sistemas, proporcionando uma
+                    experiência educacional completa e prática.
+                </p>
+
+                <p><strong>Neoway</strong> - <i>Desenvolvedor de Sistemas</i><br>
+                    - Realizava atividades de Criação/Manutenção em serviços
+                    personalizados de clientes. Os serviços eram criados com as
+                    seguintes ferramentas: Python, GoLang, Shell Script,
+                    PostgreSQL, Jenkins, ElasticSearch e PySpark. Eram criados
+                    diversos tipos de relatórios/filtros conforme a demanda do
+                    cliente, dependendo da necessidade do serviço, eram
+                    criados automações para disponibilizar essas informações
+                    na plataforma do cliente via APIs. Eram desenvolvidas
+                    atividades como: Backtesting, Data Matching,
+                    enriquecimento e indexação de dados, ETLs e era
+                    responsável da equipe para alterar as configurações da
+                    plataforma SaaS das “saídas” restritas que tinham dados
+                    relacionados a B3. Além disso, atuei como Analista de Suporte N2-Tech
+                    e realizava atividades de atualização de dados através de
+                    Inputs das solicitações dos clientes. Atuava com SLAs e era
+                    responsável por compartilhar os conhecimentos com novos
+                    colaboradores.
+                </p>
+
+                <p><strong>LifeTech</strong> - <i>Técnico de informática</i><br>
+                    - Realizava atividades relacionadas a manutenção de
+                    Notebooks, Computadores e Servidores. Realizava
+                    passagem de cabos de rede nas instalações dos clientes e
+                    também as configurações lógicas necessárias para a
+                    operação dos clientes. Além disso, realizava instalação e
+                    manutenção de sistemas de CFTV e Alarmes. Prestava
+                    serviços de informática em geral, como: sanando duvidas de
+                    clientes, remoção de vírus, manutenção em Computadores
+                    e impressoras, entre outras atividades de suporte.
+                </p>
+
+                <h2 class="featurette-heading text-blue mt-4">Formação e cursos</h2>
+
+                <p><strong>UniSul - Pós-Graduação</strong> - <i>Nota: 9,55</i><br>
+                    - Desenvolvimento de Sistemas e Metodologias Ágeis
+                </p>
+
+                <p><strong>Anhanguera - Graduação</strong> - <i>Nota: 9,7</i><br>
+                    - Análise e Desenvolvimento de Sistemas
+                </p>
+
+
+            </div>
+        </section>
+
+        <!-- Seção da página de contato -->
+        <section id="contato">
+            <div class="container mt-4 mb-4 p-5">
+                <!-- Conteúdo da página de contato -->
+                <h1 class="text-blue">Contato</h1>
+
+                <p> Estou agradecido por visitar meu perfil e quero desde já convidá-lo a entrar em contato comigo por
+                    meio
+                    das minhas redes sociais.
+                    Fico à disposição para conversarmos e trocar experiências incríveis.
+                </p>
+
+                <p> Além disso, quero convidá-lo a ver meu portfólio e meus projetos pessoais.
+                    Qualquer dúvida, estou à disposição!
+                </p>
+
+                <div class="contact-info">
+                    <a href="mailto:proftec.contato@gmail.com?subject=Entrando em contato...&body=Acessei seu protfolio e gostaria de conversar contigo."
+                        class="d-block">
+                        <i class="bi-envelope text-blue"></i>proftec.contato@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/dennis-rocha/" class="d-block">
+                        <i class="bi-linkedin text-blue"></i>Linkedin
+                    </a>
+                    <a href="https://github.com/dennis-rocha" class="d-block">
+                        <i class="bi-github text-blue"></i>Github
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+<!-- Seção do footer -->
+<footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© Dennis Rocha</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="m-1"><a class="text-blue" target="_blank" href="https://github.com/dennis-rocha"><i class="bi-github"
+                    style="font-size: 2rem;"></i></a></li>
+        <li class="m-1"><a class="text-blue" target="_blank" href="https://www.linkedin.com/in/dennis-rocha/"><i
+                    class="bi-linkedin" style="font-size: 2rem;"></i></a></li>
+        <li class="m-1"><a class="text-blue" target="_blank" href="https://lattes.cnpq.br/9897466003233875"><i
+                    class="bi-file-person-fill" style="font-size: 2rem;"></i></a></li>
+    </ul>
+</footer>
+
+<script>
+    function trocarSecao(secaoAtual) {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("contato").style.display = "none";
+
+        var new_title = secaoAtual.charAt(0).toUpperCase() + secaoAtual.slice(1);
+
+        document.title = new_title.replace("-", " ");
+
+        document.getElementById(secaoAtual).style.display = "block";
+    }
+
+    trocarSecao('home')
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+}
+
+main {
+    max-width: 938px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+section p {
+    color: #c4cdf8;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.navbar-header:hover {
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+    background-color: #2727279c;
+    transition: 0.1s;
+}
+
+.navbar-header ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;   
+}
+
+.navbar-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navbar-header a:hover {
+    /* background-color: #dae0ff77; */
+    text-shadow: 0 0 15px #002fff;
+    color: #002fff;
+    transition: 0.1s;
+}
+.navbar-brand {
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-item {
+    font-size: 1.4rem;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 20px;   
+    gap: 10px; 
+}
+
+.intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 0 0px 50px 0px #002fff;
+}
+
+.intro > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro .description {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.intro h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
