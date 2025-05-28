@@ -168,7 +168,7 @@ header {
     padding: 50px 100px;
     color: var(--color-white);
 
-    & h1 {
+    & h2 {
         font-size: 2.5rem;
         color: var(--color-green-500);
         text-align: center;
@@ -205,6 +205,69 @@ header {
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 30px;
+    }
+}
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    background-color: var(--color-blue-100);
+    color: var(--color-black);
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    color: var(--color-white);
+
+    & h2 {
+        font-size: 2.5rem;
+        color: var(--color-green-500);
+        text-align: center;
+    }
+
+    & .projects {
+        display: flex;
+        gap: 3.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px 0;
+        
+        & .project{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            width: 300px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 10px 35px -10px var(--color-blue-900);
+
+            & h3 {
+                font-size: 1.2rem;
+                color: var(--color-green-500);
+                text-align: center;
+            }
+
+            & iframe {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            & p {
+                text-align: justify;
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+    
+    }
+
 
     @media screen and (max-width: 768px) {
         padding: 50px 30px;
