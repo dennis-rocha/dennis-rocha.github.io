@@ -178,6 +178,7 @@ header {
     align-items: flex-start;
     margin: 30px 100px;
     color: var(--color-white);
+
     & h3 {
         color: var(--color-green-500);
     }
@@ -289,8 +290,8 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         margin: 30px 0;
-        
-        & .project{
+
+        & .project {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -319,9 +320,45 @@ header {
                 padding: 10px;
             }
         }
-    
     }
 
+    @media screen and (max-width: 768px) {
+        padding: 50px 30px;
+    }
+}
+
+#experiencias {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    background-color: var(--color-blue-400);
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    color: var(--color-white);
+
+    & h2 {
+        font-size: 2.5rem;
+        color: var(--color-green-500);
+        text-align: center;
+    }
+
+    & .experiencia-profisional {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        text-align: justify;
+        color: var(--color-white);
+    }
+
+    & .formacao {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        text-align: justify;
+        color: var(--color-white);
+    }
 
     @media screen and (max-width: 768px) {
         padding: 50px 30px;
