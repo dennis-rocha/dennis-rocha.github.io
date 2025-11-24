@@ -364,3 +364,124 @@ header {
         padding: 50px 30px;
     }
 }
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    background-color: var(--color-blue-100);
+    color: var(--color-black);
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    color: var(--color-white);
+
+    & h2 {
+        font-size: 2.5rem;
+        color: var(--color-green-500);
+        text-align: center;
+    }
+
+    & .contato {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        text-align: justify;
+        color: var(--color-white);
+    }
+
+    & .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        color: var(--color-white);
+        font-weight: bolder;
+        align-items: flex-start;
+    }
+
+    & i,
+    a {
+        color: var(--color-green-500);
+        transition: color 0.1s ease-in-out;
+    }
+
+    & a {
+        text-decoration: none;
+        padding: 5px;
+        padding-left: 0px;
+        border-radius: 5px;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+        background-color: var(--color-blue-300);
+    }
+
+    & i {
+        padding: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 30px;
+    }
+}
+
+#footer {
+    background: var(--color-blue-400);
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--color-white);
+
+    & .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    & .footer-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--color-green-500);
+    }
+
+    & .footer-links {
+        list-style: none;
+        display: flex;
+        gap: 1.4rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    & .footer-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    & .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    & .footer-social {
+        display: flex;
+        gap: 1rem;
+    }
+
+    & .footer-social a {
+        color: var(--color-green-500);
+        font-size: 1.3rem;
+        transition: 0.3s;
+    }
+
+    & .footer-social a:hover {
+        transform: scale(1.15);
+    }
+
+    & .footer-copy {
+        font-size: 0.85rem;
+        opacity: 0.7;
+        margin-top: 10px;
+    }
+}
